@@ -1,10 +1,13 @@
 <template>
-    <el-empty description="Empty"></el-empty>
+
 </template>
 
 <script>
-
 export default {
-  name: 'Home'
+  name: "CreatePost"
 }
 </script>
+
+<style scoped>
+
+</style>

@@ -1,7 +1,9 @@
 <template>
   <div>
     <menu-bar/>
-    <router-view></router-view>
+    <flex-template-component justify="center" :span="18">
+      <router-view></router-view>
+    </flex-template-component>
   </div>
 </template>
 
@@ -9,7 +11,8 @@
 export default {
   name: "RootPage",
   components: {
-    MenuBar: () => import('@/components/MenuBar')
+    MenuBar: () => import('@/components/MenuBar'),
+    FlexTemplateComponent: () => import('@/components/FlexTemplateComponent')
   }
 }
 </script>
