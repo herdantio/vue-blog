@@ -1,9 +1,9 @@
 <template>
   <el-menu mode="horizontal" active-text-color="#26FFAE" :router="true">
     <el-menu-item index="/">Home</el-menu-item>
-    <el-submenu index="2">
+    <el-submenu index="/">
       <template slot="title">Blog</template>
-      <el-menu-item index="2-1">Create Post</el-menu-item>
+      <el-menu-item index="/create">Create Post</el-menu-item>
       <el-menu-item index="2-2">My Post</el-menu-item>
     </el-submenu>
     <el-menu-item index="/about">About</el-menu-item>
