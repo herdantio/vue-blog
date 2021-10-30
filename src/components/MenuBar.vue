@@ -4,7 +4,7 @@
     <el-submenu index="/">
       <template slot="title">Blog</template>
       <el-menu-item index="/create">Create Post</el-menu-item>
-      <el-menu-item index="2-2">My Post</el-menu-item>
+      <el-menu-item index="/view">My Post</el-menu-item>
     </el-submenu>
     <el-menu-item index="/about">About</el-menu-item>
     <el-menu-item index="/login" class="loginBTN">Login</el-menu-item>

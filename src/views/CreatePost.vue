@@ -1,10 +1,15 @@
 <template>
-  <el-empty description="no creation"></el-empty>
+  <div>
+    <blog-post-editor/>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "CreatePost"
+  name: "CreatePost",
+  components: {
+    BlogPostEditor: () => import('@/components/Blog/BlogPostEditor')
+  },
 }
 </script>
 
