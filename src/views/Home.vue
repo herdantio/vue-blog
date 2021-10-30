@@ -1,18 +1,20 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <menu-bar/>
+    <el-row type="flex" justify="center">
+      <el-col :span="18">
+        <el-empty description="no blog post"></el-empty>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    MenuBar: () => import('@/components/MenuBar')
   }
 }
 </script>
