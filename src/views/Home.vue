@@ -1,6 +1,5 @@
 <template>
   <div>
-    <menu-bar/>
     <el-row type="flex" justify="center">
       <el-col :span="18">
         <el-empty description="no blog post"></el-empty>
@@ -12,9 +11,6 @@
 <script>
 
 export default {
-  name: 'Home',
-  components: {
-    MenuBar: () => import('@/components/MenuBar')
-  }
+  name: 'Home'
 }
 </script>
